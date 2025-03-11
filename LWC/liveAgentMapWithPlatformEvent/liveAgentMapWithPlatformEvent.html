@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:location" size="small" class="icon"></lightning-icon>
+            Live Agent Locations
+        </h3>
+        <div class="map-container">
+            <lightning-map map-markers={mapMarkers} zoom-level="10" onmarkerselect={handleMarkerSelect} center={center}></lightning-map>
+        </div>
+    </lightning-card>
+</template>
